@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit',(e)=>{
 messageData2.textContent = ''
     e.preventDefault()
 console.log(location)
-fetch('http://localhost:4000/weather?address='+location).then(res=>{
+fetch('/weather?address='+location).then(res=>{
 console.log('res',res)  
 res.json().then(data=>{
     if(data.error){
