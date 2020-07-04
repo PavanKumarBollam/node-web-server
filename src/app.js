@@ -67,6 +67,7 @@ app.get('/weather', (req, res)=>{
                  }
               console.log('response', location )
               const temp = data.current.temperature
+              console.log("current data", data.current)
               console.log('temperature is', data.current.temperature)
               res.send({location, temp, address})
 
